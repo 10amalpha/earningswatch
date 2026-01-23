@@ -13,6 +13,9 @@ export default function Header() {
             <Link href="https://10am.pro" className="hover:text-white transition-colors">
               10am.pro
             </Link>
+            <Link href="https://10ampro-hub.vercel.app/" className="hover:text-white transition-colors">
+              Dashboards
+            </Link>
             <Link
               href="https://twitter.com/holdmybirra"
               className="text-accent hover:underline"
