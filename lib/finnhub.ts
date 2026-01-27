@@ -72,8 +72,9 @@ export async function getEarningsData(): Promise<EarningsData[]> {
     const earnings = await fetchTickerEarnings(item.ticker, apiKey);
 
     // Find the next upcoming earnings (first future date)
-    const nextEarning = earnings.find((e) => new Date(e.date) >= new Date());
-
+    // Sort earnings by date (ascending) and find the first future date
+        const sortedEarnings = [...earnings].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+        const nextEarning = sortedEarnings.find((e) => new Date(e.date) >= new Date());
     results.push({
       ticker: item.ticker,
       name: item.name,
