@@ -1,5 +1,14 @@
 import { WATCHLIST } from './watchlist';
 
+// Manual date overrides - verified Jan 29, 2026
+// Use these when Finnhub API returns incorrect dates
+const DATE_OVERRIDES: Record<string, { date: string; time: 'bmo' | 'amc' | 'dmh' }> = {
+    'HIMS': { date: '2026-03-02', time: 'amc' },  // Corrected from Feb 23
+    'QSI': { date: '2026-03-09', time: 'amc' },   // Corrected from Mar 2
+    'OKLO': { date: '2026-03-30', time: 'amc' },  // Corrected from Mar 23
+    'MSTR': { date: '2026-02-03', time: 'amc' },  // Corrected from Feb 5
+};
+
 export interface EarningsData {
   ticker: string;
   name: string;
