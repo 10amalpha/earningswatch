@@ -11,7 +11,7 @@ export const WATCHLIST = [
   { ticker: 'AMD', name: 'AMD', ir: 'https://ir.amd.com', emoji: '🔺' },
   { ticker: 'NVDA', name: 'NVIDIA', ir: 'https://investor.nvidia.com', emoji: '💚' },
   { ticker: 'DUOL', name: 'Duolingo', ir: 'https://investors.duolingo.com', emoji: '🦉' },
-  { ticker: 'MSTR', name: 'MicroStrategy', ir: 'https://www.microstrategy.com/investor-relations', emoji: '₿' },
+  { ticker: 'MSTR', name: 'Strategy', ir: 'https://www.strategy.com/investor-relations', emoji: '₿' },
   { ticker: 'BE', name: 'Bloom Energy', ir: 'https://investor.bloomenergy.com', emoji: '🔋' },
 ] as const;
 
