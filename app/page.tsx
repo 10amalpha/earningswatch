@@ -18,13 +18,14 @@ export default async function Home() {
     return days !== null && days >= 0;
   });
 
-  // Get last update time
+  // Get last update time in EST
   const lastUpdated = new Date().toLocaleString('en-US', {
     month: 'short',
     day: 'numeric',
     year: 'numeric',
     hour: 'numeric',
     minute: '2-digit',
+    timeZone: 'America/New_York',
     timeZoneName: 'short',
   });
 
