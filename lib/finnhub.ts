@@ -8,12 +8,12 @@ import { WATCHLIST } from './watchlist';
 // │ Ticker  │ Date       │ Quarter  │ Source / Notes                               │
 // ├─────────┼────────────┼──────────┼──────────────────────────────────────────────┤
 // │ MSTR    │ TBD        │ Q1 2026  │ Q4 2025 REPORTED Feb 5. Next ~Apr 30/May 7   │
-// │ STKE    │ 2026-02-18 │ Q1 2026  │ CONFIRMED. Results Feb 17, Call Feb 18 4:30ET │
-// │ HIMS    │ 2026-02-23 │ Q4 2025  │ CONFIRMED. investors.hims.com, call 5pm ET    │
-// │ NVDA    │ 2026-02-25 │ Q4 2026  │ CONFIRMED. investor.nvidia.com, call 5pm ET   │
-// │ MP      │ 2026-02-26 │ Q4 2025  │ CONFIRMED. BusinessWire, call 5pm ET          │
-// │ DUOL    │ 2026-02-26 │ Q4 2025  │ CONFIRMED. GlobeNewswire, webcast 5:30pm ET   │
-// │ QSI     │ 2026-03-03 │ Q4 2025  │ CONFIRMED. BusinessWire, call 4:30pm ET       │
+// │ STKE    │ 2026-02-17 │ Q1 2026  │ CONFIRMED. Results Feb 17, Call Feb 18 4:30ET │
+// │ HIMS    │ 2026-02-23 │ Q4 2025  │ CONFIRMED. investors.hims.com, call 5:00 ET   │
+// │ NVDA    │ 2026-02-25 │ Q4 2026  │ CONFIRMED. investor.nvidia.com, call 5:00 ET  │
+// │ MP      │ 2026-02-26 │ Q4 2025  │ CONFIRMED. BusinessWire, call 5:00 ET         │
+// │ DUOL    │ 2026-02-26 │ Q4 2025  │ CONFIRMED. GlobeNewswire, webcast 5:30 ET     │
+// │ QSI     │ 2026-03-03 │ Q4 2025  │ CONFIRMED. BusinessWire, call 4:30 ET         │
 // │ OKLO    │ TBD        │ Q4 2025  │ NOT CONFIRMED. ~Mar 30 estimated              │
 // │ TSLA    │ TBD        │ Q1 2026  │ NOT CONFIRMED. ~Apr 21-28 estimated           │
 // │ HOOD    │ TBD        │ Q1 2026  │ NOT CONFIRMED. ~Apr 29/May 13 estimated       │
@@ -26,7 +26,7 @@ const DATE_OVERRIDES: Record<string, { date: string | null; time: 'bmo' | 'amc' 
   // === REPORTED — show next session as TBD ===
   'MSTR': { date: null, time: null, quarter: 'Q1 2026' },
   // === CONFIRMED dates ===
-  'STKE': { date: '2026-02-18', time: 'amc', quarter: 'Q1 2026' },  // Results Feb 17, Call Feb 18 4:30pm ET
+  'STKE': { date: '2026-02-17', time: 'amc', quarter: 'Q1 2026' },
   'HIMS': { date: '2026-02-23', time: 'amc', quarter: 'Q4 2025' },
   'NVDA': { date: '2026-02-25', time: 'amc', quarter: 'Q4 2026' },
   'MP':   { date: '2026-02-26', time: 'amc', quarter: 'Q4 2025' },
